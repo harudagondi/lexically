@@ -1,0 +1,8 @@
+__pycache__/
+lex/
+
+lexically/__pycache__/
+lexically/dictionary.html
+lexically/dictionary.json
+
+lexically/static/.webassets-cache/

@@ -1,0 +1,34 @@
+.table-nonfluid {
+    width: auto !important;
+}
+
+table, #button-group {
+    margin: 0 auto;
+}
+
+#change-language {
+    text-align: center;
+}
+
+body {
+    h1 {
+    text-align: center;
+        &, form {
+            padding: 1rem;
+        }
+    }
+}
+
+#fileinput input {
+    display: none;
+}
+
+footer {
+    background-color: #ccc;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#whitespace-footer {
+    padding: 50rem auto;
+}

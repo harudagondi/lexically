@@ -1,0 +1,40 @@
+/* line 1 */
+.table-nonfluid {
+  width: auto !important;
+}
+
+/* line 5 */
+table, #button-group {
+  margin: 0 auto;
+}
+
+/* line 9 */
+#change-language {
+  text-align: center;
+}
+
+/* line 14 */
+body h1 {
+  text-align: center;
+}
+/* line 16 */
+body h1, body h1 form {
+  padding: 1rem;
+}
+
+/* line 22 */
+#fileinput input {
+  display: none;
+}
+
+/* line 26 */
+footer {
+  background-color: #ccc;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+/* line 32 */
+#whitespace-footer {
+  padding: 50rem auto;
+}
