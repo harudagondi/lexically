@@ -6,3 +6,5 @@ lexically/dictionary.html
 lexically/dictionary.json
 
 lexically/static/.webassets-cache/
+lexically/static/js/main.js
+lexically/static/css/main.css
