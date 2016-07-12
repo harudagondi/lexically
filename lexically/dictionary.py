@@ -20,20 +20,7 @@ class Dictionary():
         self.language = language
 
     def add_word(self, word):
-        """
-        Add a word to the dictionary
-
-        Arguments:
-            word: Word
-                The word to be added
-
-        Raises:
-            LexicallyDictionaryException:
-                When IPA property of word already exists in dictionary
-
-        Return:
-            self
-        """
+        """Add a word to the dictionary"""
         if word.ipa in [word.ipa for word in self.dictionary]:
             raise LexicallyDictionaryException('Word entered already exists')
         self.dictionary.append(word)
@@ -52,17 +39,7 @@ class Dictionary():
         self.dictionary.sort()
 
     def _save_as_json(self):
-        """
-        Saves the Dictionary to a .json file
-
-        Arguments:
-            filename: str, default='dictionary'
-                The file name
-
-        Return:
-            json:
-                The json object
-        """
+        """Saves the Dictionary to a .json file"""
         words = {}
         for word in self.dictionary:
             words[word.ipa] = {
@@ -82,17 +59,7 @@ class Dictionary():
         return json.dumps(self._save_as_json(), indent=4)
 
     def load(self, filename='dictionary'):
-        """
-        Load the .json file
-
-        Arguments:
-            filename: str, default='dictionary'
-                The file name
-
-        Return:
-            self.dictionary: [Word]
-                The dictionary attribute
-        """
+        """Load the .json file"""
         words = []
         with open('{}.json'.format(filename), 'r') as f:
             json_dump = json.load(f)

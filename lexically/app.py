@@ -85,7 +85,7 @@ def modify_data():
         if file_ and allowed_file(file_.filename):
             d.load(file_.stream.read())
     elif submit_value == "Export as HTML":
-        return Response(d.export_as_html('Gamerenye'))
+        return Response(d.export_as_html(d.language))
     elif submit_value == "Change Language":
         d.language = language
     return render_template('layout.html',
